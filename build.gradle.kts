@@ -15,6 +15,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
     implementation("net.dv8tion:JDA:5.0.0-beta.17")
+    implementation("club.minnced:discord-webhooks:0.8.4")
 
     compileOnly("io.papermc.paper:paper-api:1.20.2-R0.1-SNAPSHOT")
 }

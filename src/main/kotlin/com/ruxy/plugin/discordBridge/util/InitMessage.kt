@@ -1,3 +1,13 @@
+/*
+Copyright ⒞ 2023 Ruxy
+
+This project is open source.
+
+This project is distributed under the MIT License.
+
+All permissions for this project are under the MIT License.
+*/
+
 package com.ruxy.plugin.discordBridge.util
 
 import org.slf4j.Logger

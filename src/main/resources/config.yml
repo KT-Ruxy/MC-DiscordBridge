@@ -1,0 +1,72 @@
+#>---------------------------------------------------------------------------------------------<#
+# Copyright ⒞ 2023 Ruxy
+#
+# This project is open source.
+#
+# This project is distributed under the MIT License.
+#
+# All permissions for this project are under the MIT License.
+#>---------------------------------------------------------------------------------------------<#
+
+# Thank you for the download.
+# You can link Discord to Minecraft chat, etc.
+
+# Various links↓
+# GitHub ->
+# Modrinth ->
+
+#>---------------------------------------------------------------------------------------------<#
+
+# Enter the BotToken. This field is required.(String)
+# How do I get a Token? -> Go here https://discord.com/developers/applications
+# How to go about it in more detail? ->Look here...
+# https://discord.com/developers/docs/getting-started
+
+BotToken: ''
+
+
+# Enter the online status of the bot. This field is optional.(String)
+# How do you set it up? ->
+# "ONLINE", "IDLE", "DO_NOT_DISTURB", "INVISIBLE" are available.
+# If not entered, "ONLINE" will be set automatically.
+
+Bot_Online_Status: ''
+
+
+# Enter the channel ID. This field is required.(String)
+# How do I get a channel ID? ->
+# Go to Settings/Advanced Settings and enable "Developer Mode".
+# Go to the server and channel where you want to get the channel ID.
+# Right-click on the channel, Click "Copy Channel ID" in the pop-up!
+
+Log_Channel_ID: ''
+# ↓It's Boolean.(true/false)
+Enable_Console_Bridge: false
+# ↓Required only if Enable_Console_Bridge is true.
+console_Channel_ID: ''
+
+
+# Enter the bot activity status. This field is optional.(String)
+# How do I set it up? -> ...
+# For "Status", you can use "playing", "watching", "listening", and "competing".
+# In the "Message" field, you can freely enter your own message.
+# If it is null, it will be "Playing Minecraft". (automatic assignment)
+
+Bot_Activity_Status: ''
+Bot_Activity_Message: ''
+
+
+# Sets the style for messages sent by Minecraft to Discord. This is not a required field.
+# There are modern and classic, and if you want to know what format each one is in,
+# you can find their images in the Modrinth gallery.
+
+Message_Style: ''
+
+
+# Required only if the above setting is set to modern.
+# How do I get the URL? ->
+# Right-click on the channel and go to "Edit Channel" -> "Integrations" -> "Webhooks" to do it.
+
+WebHook_URL: ''
+
+#>---------------------------------------------------------------------------------------------<#
