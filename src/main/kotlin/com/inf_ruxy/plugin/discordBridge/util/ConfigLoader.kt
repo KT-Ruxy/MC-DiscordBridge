@@ -8,7 +8,7 @@ This project is distributed under the MIT License.
 All permissions for this project are under the MIT License.
 */
 
-package com.ruxy.plugin.discordBridge.util
+package com.inf_ruxy.plugin.discordBridge.util
 
 import org.bukkit.configuration.file.YamlConfiguration
 import org.bukkit.plugin.java.JavaPlugin
@@ -60,6 +60,7 @@ class ConfigLoader(plugin: JavaPlugin, private val logger: Logger) {
         if (logChannelID == null) {
             nullFields.add("logChannelID")
         }
+        logger.info("Null Check is Completed")
         return nullFields
     }
 

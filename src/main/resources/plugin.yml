@@ -1,5 +1,5 @@
 name: DiscordBridge
-main: com.ruxy.plugin.discordBridge.DiscordBridge
+main: com.inf_ruxy.plugin.discordBridge.DiscordBridge
 version: 1.0
 api-version: 1.20
 description: This is DiscordBridge Plugin.

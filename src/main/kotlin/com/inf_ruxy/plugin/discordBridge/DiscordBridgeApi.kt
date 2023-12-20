@@ -8,14 +8,13 @@ This project is distributed under the MIT License.
 All permissions for this project are under the MIT License.
 */
 
-package com.ruxy.plugin.discordBridge
+package com.inf_ruxy.plugin.discordBridge
 
-import com.ruxy.plugin.discordBridge.bridge.DiscordManager
-import com.ruxy.plugin.discordBridge.bridge.embed.DiscordEmbedManager
-import com.ruxy.plugin.discordBridge.bridge.eventHandlers.Events
-import com.ruxy.plugin.discordBridge.manager.ConfigManager
-import com.ruxy.plugin.discordBridge.util.ConfigLoader
-import com.ruxy.plugin.discordBridge.util.InitMessage
+import com.inf_ruxy.plugin.discordBridge.bridge.DiscordManager
+import com.inf_ruxy.plugin.discordBridge.bridge.embed.DiscordEmbedManager
+import com.inf_ruxy.plugin.discordBridge.bridge.eventHandlers.Events
+import com.inf_ruxy.plugin.discordBridge.manager.ConfigManager
+import com.inf_ruxy.plugin.discordBridge.util.ConfigLoader
 import org.bukkit.plugin.java.JavaPlugin
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
@@ -29,7 +28,6 @@ object DiscordBridgeApi {
     lateinit var events: Events
     lateinit var config: ConfigLoader
     private lateinit var configManager: ConfigManager
-    private lateinit var initMessage: InitMessage
     lateinit var discordManager: DiscordManager
 
     fun load(plugin: JavaPlugin) {
@@ -42,13 +40,13 @@ object DiscordBridgeApi {
         configManager.checkDataFolder()
         configManager.checkConfigFile()
         config.loadConfig()
+        config.nullCheck()
+        config.doBridgeConsole()
     }
 
     fun start() {
         val nullFields = config.nullCheck()
         if (nullFields.isEmpty()) {
-            initMessage = InitMessage(logger)
-            initMessage.message()
             discordManager = DiscordManager()
             discordManager.startBot()
             if (config.doBridgeConsole()) {

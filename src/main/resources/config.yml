@@ -50,15 +50,16 @@ console_Channel_ID: ''
 # How do I set it up? -> ...
 # For "Status", you can use "playing", "watching", "listening", and "competing".
 # In the "Message" field, you can freely enter your own message.
-# If it is null, it will be "Playing Minecraft". (automatic assignment)
+# If it is null, it will be "Playing Minecraft" automatic assignment.
 
 Bot_Activity_Status: ''
 Bot_Activity_Message: ''
 
 
-# Sets the style for messages sent by Minecraft to Discord. This is not a required field.
+# Sets the style for messages sent by Minecraft to Discord. This field is optional.
 # There are modern and classic, and if you want to know what format each one is in,
 # you can find their images in the Modrinth gallery.
+# If null, a 'classic' is automatically assigned.
 
 Message_Style: ''
 

@@ -8,14 +8,14 @@ This project is distributed under the MIT License.
 All permissions for this project are under the MIT License.
 */
 
-package com.ruxy.plugin.discordBridge.bridge
+package com.inf_ruxy.plugin.discordBridge.bridge
 
 import club.minnced.discord.webhook.WebhookClient
 import club.minnced.discord.webhook.send.WebhookMessageBuilder
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.events
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.logger
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.events
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.logger
 
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.config
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.config
 import net.dv8tion.jda.api.JDA
 import net.dv8tion.jda.api.JDABuilder
 import net.dv8tion.jda.api.OnlineStatus
@@ -61,6 +61,7 @@ open class DiscordManager {
                 .setActivity(activity)
                 .addEventListeners(discordListener)
                 .build()
+                .awaitReady()
 
             logger.info("The Discord Bot has been successfully activated.")
             sendToDiscord(":white_check_mark: **Server has Started!**")

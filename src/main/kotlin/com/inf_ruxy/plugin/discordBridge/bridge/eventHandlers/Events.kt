@@ -8,11 +8,11 @@ This project is distributed under the MIT License.
 All permissions for this project are under the MIT License.
 */
 
-package com.ruxy.plugin.discordBridge.bridge.eventHandlers
+package com.inf_ruxy.plugin.discordBridge.bridge.eventHandlers
 
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.discordEmbedManager
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.config
-import com.ruxy.plugin.discordBridge.DiscordBridgeApi.discordManager
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.discordEmbedManager
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.config
+import com.inf_ruxy.plugin.discordBridge.DiscordBridgeApi.discordManager
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.event.ClickEvent

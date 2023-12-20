@@ -28,6 +28,6 @@ kotlin {
 }
 
 tasks.shadowJar {
-    archiveFileName = "$archiveBaseName-$version"
+    archiveFileName = "DiscordBridge-$version.jar"
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

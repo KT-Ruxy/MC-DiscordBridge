@@ -8,7 +8,7 @@ This project is distributed under the MIT License.
 All permissions for this project are under the MIT License.
 */
 
-package com.ruxy.plugin.discordBridge.manager
+package com.inf_ruxy.plugin.discordBridge.manager
 
 import org.bukkit.plugin.java.JavaPlugin
 import org.slf4j.Logger
